@@ -1,0 +1,122 @@
+body { background-color: #010000; color: #010000; }
+.homepageimage{
+	max-width: 100%
+}
+#container {
+	background-color: #010000; 
+}
+.inset {
+/*	outline: solid 1px red;*/
+	width: 90%;
+	min-width: 320px; 
+	max-width: 1200px;
+	/*padding: 10px; */
+	margin: auto;
+	color: #FF0000;
+}
+
+header 	{ background-color: #010000; padding: 10px; }
+/*nav 	{ background-color: #010000; padding: 10px; }*/
+#main 	{ background-color: #010000; padding: 10px; }
+/*footer 	{ background-color: #010000; padding: 10px; }
+*/
+/*-------------------------------------
+| header and footer
+-------------------------------------*/
+header .inset {
+	/*line-height: 200px;*/
+	font-size: 50px;
+	text-align: center;
+}
+/*footer .inset {
+	line-height: 100px;
+	font-size: 30px;
+	text-align: center;
+}*/
+/*-------------------------------------
+| nav
+-------------------------------------*/
+nav#mainmenu { text-align: center; }
+nav#mainmenu a {
+	display: inline-block;
+/*	width: 75px; 
+	line-height: 50px; 
+	border-radius: 5px;*/
+	/*background-color: #5E070E;*/
+	color: #E6E7E8; 
+}
+nav#mainmenu a:hover { color: #A7A9AC; text-decoration: none; }
+nav#mainmenu a.chosen { color: #B21414; }
+
+/*-------------------------------------
+| Hamburger
+-------------------------------------*/
+nav#mainmenu .glyphicon-menu-hamburger {
+	color: #E49191;
+	font-size: 40px;
+	padding: 5px;
+}
+
+nav#mainmenu .menu { display: none; }
+
+@media screen and (min-width: 800px) {
+	nav#mainmenu .glyphicon-menu-hamburger { display: none; }
+	nav#mainmenu .menu { display: block; }
+}
+
+/*-------------------------------------
+| Pinned Navigation
+-------------------------------------*/
+.pinned nav#mainmenu {
+	position: fixed;
+	left: 0px; 
+	right: 0px; 
+	top: 0px; 
+
+	z-index: 9000;
+}
+/*hold the space for the nav once its positioned. */
+.pinned header { margin-bottom: 70px; }
+
+/*-------------------------------------
+| Main
+-------------------------------------*/
+#main section {
+	min-height: 600px;
+	overflow: hidden;
+	background-color: #414042;
+}
+#main section:nth-of-type(even) { background-color: #55939D; }
+
+/*-------------------------------------
+| 12 Column Grid
+-------------------------------------*/
+.row > div {
+	/*border: solid 3px #5E8DC7;*/
+	background-color: #fff;
+	min-height: 300px;
+	padding-top: 10px;
+
+
+}
+
+
+/*-------------------------------------
+| Responsive Images
+-------------------------------------*/
+img { width: 100%; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
