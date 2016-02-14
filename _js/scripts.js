@@ -146,5 +146,40 @@ $('nav#mainmenu .glyphicon-menu-hamburger').click(hamburger_toggle);
 
 
 
+//LIGHTBOX//
+
+function light_on() {
+	var newSrc = $(this).find('img').attr('src');
+	 $('#dark img').attr('src' , newSrc);
+
+// get origional image side
+	var liinboImg = new Image();
+	liinboImg.src = newSrc;
+
+	$(liinboImg).load(function(){
+
+	new_w = liinboImg.width;
+	new_h = liinboImg.height;
+
+
+	$('#light').css({'width':new_w,'height':new_h});
+
+
+	
+//turn on the light box
+	 $('#dark').show();
+	}); //here ends the image load into memory
+
+}
+
+function light_off() {
+	//turn off the lightboxS
+	$('#dark').hide();
+}
+
+$('#gallery .item').click(light_on);
+$('#dark .close').click(light_off);
+$('#dark').click(light_off);
+
 
 
